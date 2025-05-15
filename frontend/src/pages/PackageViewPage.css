@@ -1,0 +1,106 @@
+.package-view-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .package-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .package-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .ant-picker-cell-disabled {
+    background-color: #ffcccc; /* Light red background */
+    cursor: not-allowed; /* Block cursor */
+  }
+  .package-content {
+    display: flex;
+    gap: 20px;
+    height: 80vh;
+    margin-bottom: 50px;
+  }
+  
+  .package-image {
+    flex: 1;
+  }
+  
+  .package-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .package-details {
+    flex: 1;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .price-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .price-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .package-image{
+    height: 100%;
+  }
+  .pc{
+    height: 70vh;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  .price-item.total {
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .offers-section {
+    margin-top: 20px;
+  }
+  
+  .ant-divider {
+    margin: 10px 0;
+  }
+
+  .package-details h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    color: #222;
+  }
+
+  .package-details .ant-divider {
+    margin: 12px 0 20px 0;
+  }
+
+  .package-details ul {
+    margin-bottom: 24px;
+  }
+
+  .package-details .price-breakdown {
+    margin-bottom: 24px;
+  }
+
+  .feedback-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }

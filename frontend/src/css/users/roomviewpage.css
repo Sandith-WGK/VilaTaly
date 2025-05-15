@@ -1,0 +1,262 @@
+.room-details-page {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.room-image{
+    width: 650px;
+}
+.room-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* Adjust for layout balance */
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 40px;
+    flex-grow: 1;
+}
+
+.room-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.room-info h1 span {
+    font-size: 0.6em;
+    color: #95a5a6;
+}
+
+.room-description {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+.room-description li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.room-amenities {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    color: #34495e;
+}
+
+.room-amenities li {
+    width: 45%;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+.room-amenities li:before {
+    content: "•";
+    margin-right: 8px;
+    color: #e67e22;
+}
+
+.cancellation-rules {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #c0392b;
+}
+
+.cancellation-rules strong {
+    color: #e74c3c;
+}
+
+.cancellation-rules span {
+    color: #d35400;
+}
+
+.pricing {
+    margin-top: 30px;
+}
+
+.pricing-option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.pricing-option p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.price {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.add-prices {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #27ae60;
+}
+.total-save {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #27ae60;
+}
+
+.choose-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    width:470px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.choose-button:hover {
+    background-color: #229954;
+}
+
+.wishlist-button {
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+    border: 1px solid #bdc3c7;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.wishlist-button:hover {
+    background-color: #d5dbdb;
+}
+
+.custom-reservation-modal {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-reservation-modal .ant-modal-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.custom-reservation-modal .ant-modal-header {
+    background-color: #f9f9f9;
+    color: white;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.custom-reservation-modal .ant-modal-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.custom-reservation-modal .ant-modal-footer {
+    border-top: none;
+    padding-top: 15px;
+    background-color: #f9f9f9;
+}
+
+.custom-reservation-modal .ant-modal-footer .custom-cancel-button,
+.custom-reservation-modal .ant-modal-footer .custom-submit-button {
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.custom-reservation-modal .custom-cancel-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+}
+
+.custom-reservation-modal .custom-submit-button {
+    background-color: #229954;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.custom-reservation-modal .custom-submit-button:hover {
+    background-color: #1e8449; 
+    color: white;
+}
+
+
+.custom-reservation-modal .total-cost {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* my bookings page  */
+.bookings-container {
+    padding: 20px;
+}
+
+.booking-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.booking-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Two cards per row */
+}
+
+.booking-card h2 {
+    margin: 0 0 10px;
+}
+
+.booking-card p {
+    margin: 5px 0;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 10px;
+}
+

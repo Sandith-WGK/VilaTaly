@@ -1,0 +1,133 @@
+.sg_main_container_login_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sg_login_background_main {
+  border-radius: 11px;
+  margin-top: -30px;
+  background: #ffffff;
+  width: 554px;
+  height: 720px;
+  text-align: center;
+  padding: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.sg_login_title_main_container {
+  margin-top: 90px;
+}
+
+.sg_logon_title {
+  width: 253px;
+  height: 41px;
+  margin-bottom: 5px;
+  color: #313131;
+  font-weight: 600;
+}
+
+.sg_login_subtitle {
+  margin-bottom: 40px;
+  margin-right: 233px;
+  color: var(--T, #313131);
+  font-size: 16px;
+  font-weight: 400;
+}
+.sg_input_filed_main {
+  margin-top: 60px;
+}
+
+.sg_login_email_input {
+  padding: 12px;
+  margin: 10px 0;
+  width: 487px;
+  height: 46px;
+  border: 1px solid #1c1b1f;
+  border-radius: 4px 4px 0px 0px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.sg_login_password_input {
+  padding: 12px;
+  margin: 10px 0;
+  width: 487px;
+  height: 46px;
+  border: 1px solid #1c1b1f;
+  border-radius: 4px 4px 0px 0px;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-right: 40px;
+}
+
+.custom-password-field input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.sg_custom_password_toggle {
+  position: absolute;
+  margin-top: -33px;
+  margin-left: 210px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.sg_login_main_button {
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #27ae61;
+  color: white;
+  border: none;
+  width: 487px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.sg_login_main_button:hover {
+  background-color: #218c50;
+}
+
+.sg_login_remember_me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custom-login-options label {
+  display: flex;
+  align-items: center;
+}
+
+.sg_login_forgot_password {
+  color: #ff595e;
+  text-decoration: none;
+}
+.sg_login_forgot_password:hover {
+  text-decoration: underline;
+}
+
+.custom-forgot-password:hover {
+  text-decoration: underline;
+}
+
+.sg_signup_txt_main {
+  margin-top: 20px;
+}
+
+.sg_signup_link {
+  color: #27ae61;
+  text-decoration: none;
+}
+
+.sg_signup_link:hover {
+  text-decoration: underline;
+  color: #ce2424;
+}

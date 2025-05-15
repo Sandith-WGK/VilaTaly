@@ -1,0 +1,72 @@
+.manage_feedback_main_container_admin {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.manage_feedback_main_container_admin_123 {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 100px);
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.manage_feedback_main_container_admin_123 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.csv_button_container_123 {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin-bottom: 30px;
+     /* Add space below */
+    padding-right: 10px;
+}
+
+.csv_button_admin_123 {
+    display: flex;
+    align-items: center;
+    background-color: #1890ff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.csv_button_admin_123:hover {
+    background-color: #40a9ff; /* Slightly lighter blue on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
+}
+
+.csv_button_admin_123 svg {
+    margin-left: 8px; /* Adds space between the button text and the printer icon */
+    transition: color 0.3s ease; /* Smooth transition for icon color on hover */
+}
+
+.ant-table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-pagination {
+    display: flex;
+    justify-content: center; /* Center the pagination */
+    margin-top: 20px;
+}
+
+.ant-pagination {
+    text-align: center; /* Ensures text in pagination is centered */
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+.feedback-page-6789 {
+    padding: 20px;
+}
+
+.feedback-header-6789 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.feedback-list-6789 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feedback-list-pofile-6789 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feedback-card-6789 {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.feedback-actions-6789 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.ant-modal-6789 .ant-modal-title {
+    text-align: center;
+}
+
+.ant-modal-footer-6789 {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,121 @@
+.parking-page1244 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parking-header1244 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.date-picker-container1244 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin : 0 80px
+}
+
+.date-picker-container1244 p {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.no-date-selected1244 {
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+    height: 250px;
+}
+
+.availability-grid1244 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    margin-bottom: 50px;
+    margin: 0 150px;
+}
+
+.date-picker1244{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.row1244 {
+    display: contents;
+}
+
+.cell1244 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.available1244 {
+    background-color: #27ae61;
+    color: #fff;
+}
+
+.booked1244 {
+    background-color: darkorange;
+    color: #fff;
+}
+
+.booking-form1244 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 300px;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.vehicle-number-input1244,
+.slot-select1244,
+.date-picker-form-1244,
+.duration-select1244 {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bookig_form-row {
+    display: flex;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+.price-display1244{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.book-now-btn1244 {
+    background-color: #27ae61;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 80px;
+    color: white;
+    width: 250px;
+    align-self: center;
+}
+
+.book-now-btn1244:hover {
+    background-color: #219653;
+}

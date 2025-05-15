@@ -1,0 +1,5 @@
+@import url('./css/index.css');
+
+.main-container-page {
+    min-height: calc(100vh - 80px);
+}

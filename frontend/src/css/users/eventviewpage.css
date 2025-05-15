@@ -1,0 +1,164 @@
+.event-details-page {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-top: 9%;
+}
+
+.event-image {
+    width: 650px;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 40px;
+    flex-grow: 1;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.event-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.event-info p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.event-info h3 {
+    font-size: 1.4em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.reserve-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.reserve-button:hover {
+    background-color: #229954;
+}
+
+.custom-event-reservation-modal .ant-modal-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.custom-event-reservation-modal .ant-modal-header {
+    background-color: #f9f9f9;
+    color: white;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.custom-event-reservation-modal .ant-modal-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.custom-event-reservation-modal .ant-modal-footer {
+    border-top: none;
+    padding-top: 15px;
+    background-color: #f9f9f9;
+}
+
+.custom-event-reservation-modal .ant-modal-footer .custom-cancel-button,
+.custom-event-reservation-modal .ant-modal-footer .custom-submit-button {
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.custom-event-reservation-modal .custom-cancel-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+}
+
+.custom-event-reservation-modal .custom-submit-button {
+    background-color: #229954;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-event-reservation-modal .custom-submit-button:hover {
+    background-color: #1e8449;
+    color: white;
+}
+
+.custom-event-reservation-modal .total-cost {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* EventBookings css */
+
+.event-bookings-container {
+    padding: 20px;
+}
+
+.event-booking-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-booking-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Two cards per row */
+}
+
+.event-booking-card h3 {
+    margin: 0 0 10px;
+}
+
+.event-booking-card p {
+    margin: 5px 0;
+}
+
+.card-buttons-event {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination-event-booking {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-event-booking button {
+    margin: 0 10px;
+}
+

@@ -1,0 +1,96 @@
+.manage-events {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 100px);
+    
+}
+/* .sg_eventManage_table_bg{
+    padding: 20px;
+    border-radius: 8px;
+    width: 1650px;
+} */
+
+.search-add-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar-eventmanage {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* Style for the Add Event button */
+.add_event_button {
+    background-color: #25b05f; /* Default button color */
+    border-color: #25b05f; /* Default border color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */ 
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for the Add Event button */
+.add_event_button:hover {
+    background-color: #4dcc7e; /* Darker green on hover */
+    border-color: #4dcc7e; /* Darker border on hover */
+}
+
+
+.pagination-eventMange {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ant-modal-content {
+    border-radius: 10px;
+}
+
+.ant-form-item {
+    margin-bottom: 15px;
+}
+
+.action-buttons-manageEvent > svg {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Style for the button group that contains the CSV Download button and other buttons */
+.Event_button_group {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: flex-end; /* Align the buttons to the right */
+    margin-bottom: 20px; /* Add space below the button group */
+}
+
+/* Style for the CSV button */
+.csv_button_event {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+/* Style for the "Generate CSV Report" button */
+.Event_generate_report_button {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Border color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Hover effect for the button */
+.Event_generate_report_button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Border color on hover */
+}

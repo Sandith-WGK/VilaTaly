@@ -1,0 +1,53 @@
+.manage_room{
+    width: 100%;
+    margin-top: 10px;
+    height: 1020px;
+    padding: 15px;
+}
+
+.manage_room_content{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.Type_Distribution{
+    margin-top: 20px;
+}
+
+.manageroom_table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.manage_room_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_new_room {
+    background-color: #229954;
+    color: #fff;
+    border: none;
+    height: 45px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add_new_room:hover {
+    background-color: #49a56f;
+}
+
+.room_model{
+    margin-top: 20px;
+}
+
+.room_model input{
+    margin-bottom: 10px;
+}
+

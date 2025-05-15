@@ -1,0 +1,359 @@
+/* Container for the entire page */
+.pkg_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Card styling */
+  .pkg_card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* Hover effect for the card */
+  .pkg_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Styling for the image */
+  .pkg_image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Image hover effect */
+  .pkg_card:hover .pkg_image {
+    transform: scale(1.05);
+  }
+  
+  /* Package info section */
+  .pkg_info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Package title styling */
+  .pkg_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Styling for size and description */
+  .pkg_size,
+  .pkg_beds {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  /* Footer section with price and button */
+  .pkg_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Price display */
+  .pkg_price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #28a745;
+  }
+  
+  /* Button styling */
+  .pkg_button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .pkg_button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .pkg_container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pkg_card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pkg_container {
+      padding: 20px;
+    }
+  
+    .pkg_title {
+      font-size: 1.3rem;
+    }
+  
+    .pkg_size,
+    .pkg_beds {
+      font-size: 0.9rem;
+    }
+  
+    .pkg_price {
+      font-size: 1.1rem;
+    }
+  
+    .pkg_button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+/* packageview css */
+
+/* Main container for the package details page */
+.package-details-page {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+}
+
+/* Image section styling */
+.package-image {
+  width: 100%;
+  height: 300px;
+}
+
+.package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Information section styling */
+.package-info {
+  padding: 40px;
+  flex-grow: 1;
+}
+
+.package-info h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.package-info h1 span {
+  font-size: 0.8em;
+  color: #95a5a6;
+}
+
+/* Package description styling */
+.package-description {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Amenities section styling */
+.package-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #34495e;
+}
+
+.package-amenities li {
+  width: 50%;
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+.package-amenities li:before {
+  content: "•";
+  margin-right: 8px;
+  color: #e67e22;
+}
+
+/* Cancellation rules styling */
+.cancellation-rules {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #c0392b;
+}
+
+.cancellation-rules strong {
+  color: #e74c3c;
+}
+
+.cancellation-rules span {
+  color: #d35400;
+}
+
+/* Pricing section */
+.pricing {
+  margin-top: 30px;
+}
+
+.add-prices {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.total-save {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #27ae60;
+}
+
+/* Reserve button styling */
+.choose-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.choose-button:hover {
+  background-color: #229954;
+}
+
+/* Modal styling for reservation */
+.custom-reservation-modal {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-reservation-modal .ant-modal-content {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.custom-reservation-modal .ant-modal-header {
+  background-color: #f9f9f9;
+  color: white;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+.custom-reservation-modal .ant-modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.custom-reservation-modal .ant-modal-footer {
+  border-top: none;
+  padding-top: 15px;
+  background-color: #f9f9f9;
+}
+
+.custom-reservation-modal .ant-modal-footer .custom-cancel-button,
+.custom-reservation-modal .ant-modal-footer .custom-submit-button {
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.custom-reservation-modal .custom-cancel-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+}
+
+.custom-reservation-modal .custom-submit-button {
+  background-color: #229954;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-reservation-modal .custom-submit-button:hover {
+  background-color: #1e8449;
+  color: white;
+}
+
+/* Total cost styling inside modal */
+.custom-reservation-modal .total-cost {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Ant Design form field styles */
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.ant-form-item label {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-input-number,
+.ant-picker {
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+.ant-input:hover,
+.ant-input-number:hover,
+.ant-picker:hover {
+  border-color: #27ae60;
+}
+
+.ant-picker-range {
+  width: 100%;
+}
+
+.ant-picker-focused {
+  border-color: #27ae60 !important;
+  box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+}

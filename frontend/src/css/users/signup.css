@@ -1,0 +1,118 @@
+/* Main container */
+.sg_signup_page_main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+/* Form container */
+.sg_signup_page_form_container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  height: 749px;
+  text-align: center;
+}
+
+/* Title and subtitle */
+.sg_signup_page_title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #218c50;
+  width: 175.522px;
+  height: 54.249px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.sg_signup_page_subtitle {
+  margin-bottom: 1.5rem;
+  color: #6a6a6a;
+  width: 240px;
+  height: 22.143px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+/* Input group */
+.sg_signup_page_input_group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 25px;
+}
+
+.sg_signup_page_input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  color: #4b5563;
+  box-sizing: border-box;
+}
+.sg_signup_page_input_passwoard{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Checkbox */
+.sg_signup_page_checkbox_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-top: 40px;
+}
+
+.sg_signup_page_checkbox {
+  margin-right: 0.5rem;
+}
+
+.sg_signup_page_terms {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+}
+
+.sg_signup_page_terms_link {
+  color: #ea4c89;
+  cursor: pointer;
+}
+
+/* Button */
+.sg_signup_page_button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #27ae61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sg_signup_page_button:hover {
+  background-color: #218c50;
+}
+
+/* Login text */
+.sg_signup_page_login_text {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+}
+
+.sg_signup_page_login_link {
+  color: #ea4c89;
+  cursor: pointer;
+}

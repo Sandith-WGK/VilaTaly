@@ -1,0 +1,168 @@
+.manage-employees-1234 {
+    margin: 18px;
+    height: calc(100vh - 100px);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+
+}
+
+.header-1234 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-and-add-1234 {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input-1234 {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-btn-1234 {
+    background-color: #25b05f;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-btn-1234:hover {
+    background-color: #218f4d;
+}
+
+.employee-table-1234 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.employee-table-1234 th,
+.employee-table-1234 td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.edit-btn-1234,
+.delete-btn-1234 {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn-1234 {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.edit-btn-1234:hover {
+    background-color: #ec971f;
+}
+
+.delete-btn-1234 {
+    background-color: #d9534f;
+    color: white;
+}
+
+.delete-btn-1234:hover {
+    background-color: #c9302c;
+}
+
+.pagination-1234 {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pagination-1234 button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #25b05f;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination-1234 button:hover {
+    background-color: #218f4d;
+}
+
+.pagination-1234 .active-page-1234 {
+    background-color: #218f4d;
+    cursor: default;
+}
+
+.popup-overlay-1234 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-1234 {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.popup-1234 h3 {
+    margin-top: 0;
+}
+
+.actions-1234 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.actions-1234 button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actions-1234 button:first-child {
+    background-color: #25b05f;
+    color: white;
+}
+
+.actions-1234 button:first-child:hover {
+    background-color: #218f4d;
+}
+
+.actions-1234 button:last-child {
+    background-color: #d9534f;
+    color: white;
+}
+
+.actions-1234 button:last-child:hover {
+    background-color: #c9302c;
+}
+
+.popup-1234 input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
