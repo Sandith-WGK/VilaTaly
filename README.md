@@ -1,7 +1,3 @@
-Absolutely! Here’s an improved `README.md` that includes details about the **Inventory Management**, **Employee Management**, **Event/Booking Management**, and **Feedback Management** features, as well as references to the relevant pages/components in your codebase.
-
----
-
 # VilaTaly Hotel Management System
 
 ## Overview
