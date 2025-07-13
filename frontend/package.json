@@ -2,6 +2,30 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "author": "VilaTaly Team",
+  "contributors": [
+    {
+      "name": "W.G.K. Sandith",
+      "email": "it23305182@my.sliit.lk"
+    },
+    {
+      "name": "Alahakoon P B",
+      "email": "it23405240@my.sliit.lk"
+    },
+    {
+      "name": "Wanniarachchi L K S",
+      "email": "it23145252@my.sliit.lk"
+    },
+    {
+      "name": "Kodithuwakku P R M",
+      "email": "it23491526@my.sliit.lk"
+    },
+    {
+      "name": "C J Thilakawardana",
+      "email": "it23247840@my.sliit.lk"
+    }
+  ],
+  "description": "Frontend client for VilaTaly Hotel Management System",
   "dependencies": {
     "@ant-design/icons": "^5.3.5",
     "@iconify/react": "^5.0.2",

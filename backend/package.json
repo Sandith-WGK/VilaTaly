@@ -6,9 +6,31 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "",
+  "author": "VilaTaly Team",
+  "contributors": [
+    {
+      "name": "W.G.K. Sandith",
+      "email": "it23305182@my.sliit.lk"
+    },
+    {
+      "name": "Alahakoon P B",
+      "email": "it23405240@my.sliit.lk"
+    },
+    {
+      "name": "Wanniarachchi L K S",
+      "email": "it23145252@my.sliit.lk"
+    },
+    {
+      "name": "Kodithuwakku P R M",
+      "email": "it23491526@my.sliit.lk"
+    },
+    {
+      "name": "C J Thilakawardana",
+      "email": "it23247840@my.sliit.lk"
+    }
+  ],
   "license": "ISC",
-  "description": "",
+  "description": "Backend server for VilaTaly Hotel Management System",
   "dependencies": {
     "axios": "^1.9.0",
     "bcrypt": "^5.1.1",

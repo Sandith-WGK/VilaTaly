@@ -6,6 +6,26 @@ VilaTaly is a modern hotel management system designed to streamline room package
 
 ---
 
+## Core Contributors & Work Distribution
+
+| Name with Initials         | Reg. Number  | Email                        | Module Responsibility                |
+|---------------------------|--------------|------------------------------|--------------------------------------|
+| W.G.K. Sandith            | IT23305182   | it23305182@my.sliit.lk       | Room Package and Discount Management |
+| Alahakoon P B             | IT23405240   | it23405240@my.sliit.lk       | Booking and Reservation Management   |
+| Wanniarachchi L K S       | IT23145252   | it23145252@my.sliit.lk       | Inventory Management System          |
+| Kodithuwakku P R M        | IT23491526   | it23491526@my.sliit.lk       | Employee Management System           |
+| C J Thilakawardana        | IT23247840   | it23247840@my.sliit.lk       | User & Feedback Management System    |
+
+### Work Distribution Details
+
+- **W.G.K. Sandith:** Room Package and Discount Management – Admin tools for packages/discounts, guest browsing, real-time updates, reporting.
+- **Alahakoon P B:** Booking & Reservation Management – Guest booking, admin booking oversight, notifications, reporting, billing.
+- **Wanniarachchi L K S:** Inventory Management – Real-time stock, item management, reporting, analytics, kitchen supply transfer.
+- **Kodithuwakku P R M:** Employee Management – Staff records, attendance (QR), admin/employee profile management.
+- **C J Thilakawardana:** User & Feedback Management – Registration, login, profile, password, account deletion, feedback system.
+
+---
+
 ## Features
 
 ### For Admins
@@ -173,6 +193,24 @@ VilaTaly/
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+### How to Contribute
+
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add some amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
+
+### Contributor Guidelines
+
+- Follow the existing code style and conventions
+- Write tests for new features
+- Update documentation for any changes
+- Use clear, descriptive commit messages
+- Provide a clear description of changes in pull requests
+
+See [CONTRIBUTORS.md](./CONTRIBUTORS.md) for a list of all contributors.
 
 ---
 
