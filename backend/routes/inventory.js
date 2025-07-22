@@ -147,7 +147,7 @@ router.get("/checkLowStock", async (req, res) => {
   }
 });
 
-// @desc   Check for expired items and notify admins
+
 // @desc   Check for expired items and notify admins
 router.get("/checkExpiredItems", async (req, res) => {
   try {
