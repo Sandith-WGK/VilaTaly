@@ -43,7 +43,7 @@ VilaTaly is a modern hotel management system designed to streamline room package
   - **Related Page:** `frontend/src/components/admin/ManageDiscounts.jsx`
 
 - **Inventory Management**
-  - Add, update, and remove inventory items (e.g., food, beverages, supplies).
+  - Add, update, view and remove inventory items (e.g., food, beverages, supplies).
   - Track stock levels, expiration dates, and reorder points.
   - Export inventory data as CSV or PDF.
   - Visualize inventory analytics with charts.
