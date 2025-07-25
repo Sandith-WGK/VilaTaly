@@ -59,6 +59,7 @@ VilaTaly is a modern hotel management system designed to streamline room package
 - **Event/Booking Management**
   - View, update, and delete all guest bookings.
   - Change booking status (pending, confirmed, cancelled).
+  - **Automatic email notifications** sent to customers when booking status changes.
   - Export booking data as CSV.
   - View total confirmed booking revenue.
   - **Related Page:** `frontend/src/components/admin/ManageEvents.jsx`
@@ -112,6 +113,7 @@ VilaTaly is a modern hotel management system designed to streamline room package
 - Node.js (v14+ recommended)
 - npm or yarn
 - MongoDB
+- Gmail account (for email notifications)
 
 ### Installation
 
@@ -134,7 +136,13 @@ VilaTaly is a modern hotel management system designed to streamline room package
    ```
 
 4. **Set up environment variables:**
-   - Create a `.env` file in the `backend` directory with your MongoDB URI and any other secrets.
+   - Create a `.env` file in the `backend` directory with your MongoDB URI and email configuration:
+   ```bash
+   MONGODB_URI=your_mongodb_connection_string
+   GMAIL_EMAIL=your_email@gmail.com
+   GMAIL_PASSWORD=your_app_password
+   ```
+   **Note:** For Gmail, you'll need to use an App Password if you have 2FA enabled.
 
 5. **Start the backend server:**
    ```bash

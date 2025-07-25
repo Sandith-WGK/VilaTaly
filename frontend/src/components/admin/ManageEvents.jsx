@@ -11,11 +11,12 @@ import {
   Input,
   Space,
   Select,
-  Typography
+  Typography,
+  Tooltip
 } from "antd";
 import axios from "axios";
 import { CSVLink } from "react-csv";
-import { SearchOutlined, DeleteOutlined, DownloadOutlined } from "@ant-design/icons";
+import { SearchOutlined, DeleteOutlined, DownloadOutlined, MailOutlined } from "@ant-design/icons";
 import moment from "moment";
 
 const { Option } = Select;
@@ -33,6 +34,7 @@ const ManageBookings = () => {
   const [selectedStatus, setSelectedStatus] = useState("all");
   const [sortField, setSortField] = useState("checkInDate");
   const [sortOrder, setSortOrder] = useState("descend"); // Default to descending (newest first)
+  const [notificationsSent, setNotificationsSent] = useState(new Set());
 
   const statusColors = {
     pending: "orange",
@@ -81,8 +83,14 @@ const ManageBookings = () => {
 
   const handleStatusChange = async (bookingId, newStatus) => {
     try {
-      await axios.post(`/api/booking/updateStatus/${bookingId}`, { status: newStatus });
-      message.success("Booking status updated");
+      const response = await axios.post(`/api/booking/updateStatus/${bookingId}`, { status: newStatus });
+      message.success(response.data.message || "Booking status updated");
+      
+      // Track that notification was sent
+      if (response.data.message && response.data.message.includes("notification sent")) {
+        setNotificationsSent(prev => new Set([...prev, bookingId]));
+      }
+      
       fetchBookings();
     } catch (error) {
       message.error("Failed to update status");
@@ -233,15 +241,23 @@ const ManageBookings = () => {
       key: "actions",
       render: (_, record) => (
         <Space size="middle">
-          <Select
-            defaultValue={record.status}
-            style={{ width: 120 }}
-            onChange={(value) => handleStatusChange(record._id, value)}
-          >
-            <Option value="pending">Pending</Option>
-            <Option value="confirmed">Confirmed</Option>
-            <Option value="cancelled">Cancelled</Option>
-          </Select>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Select
+              defaultValue={record.status}
+              style={{ width: 120 }}
+              onChange={(value) => handleStatusChange(record._id, value)}
+            >
+              <Option value="pending">Pending</Option>
+              <Option value="confirmed">Confirmed</Option>
+              <Option value="cancelled">Cancelled</Option>
+            </Select>
+
+            {notificationsSent.has(record._id) && (
+              <Tooltip title="Email notification sent">
+                <MailOutlined style={{ color: '#52c41a', fontSize: '16px' }} />
+              </Tooltip>
+            )}
+          </div>
 
           <Popconfirm
             title="Are you sure to delete this booking?"
@@ -249,10 +265,8 @@ const ManageBookings = () => {
             okText="Yes"
             cancelText="No"
           >
-            
+            <Button type="text" danger icon={<DeleteOutlined />} />
           </Popconfirm>
-          
-          
         </Space>
       ),
     },

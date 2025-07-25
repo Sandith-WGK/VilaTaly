@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Booking = require("../models/Booking");
 const RoomPackage = require("../models/RoomPackage");
+const EmailService = require("../utils/emailService");
 
 
 
@@ -59,17 +60,33 @@ router.get("/userBookings", async (req, res) => {
 router.post("/updateStatus/:id", async (req, res) => {
   try {
     const { status } = req.body;
+    const oldBooking = await Booking.findById(req.params.id).populate("packageId").populate("userId");
+    
+    if (!oldBooking) {
+      return res.status(404).json({ message: "Booking not found" });
+    }
+
     const booking = await Booking.findByIdAndUpdate(
       req.params.id,
       { status },
       { new: true }
     ).populate("packageId").populate("userId");
 
-    if (!booking) {
-      return res.status(404).json({ message: "Booking not found" });
+    // Send email notification if status changed
+    if (oldBooking.status !== status) {
+      try {
+        await EmailService.sendBookingStatusNotification(booking, status);
+        console.log(`Email notification sent to ${booking.guestEmail} for status change to ${status}`);
+      } catch (emailError) {
+        console.error('Failed to send email notification:', emailError);
+        // Don't fail the request if email fails
+      }
     }
 
-    res.status(200).json({ booking, message: "Booking status updated" });
+    res.status(200).json({ 
+      booking, 
+      message: "Booking status updated" + (oldBooking.status !== status ? " and notification sent" : "")
+    });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -136,7 +153,7 @@ router.post("/confirmBooking/:bookingId", async (req, res) => {
   const { bookingId } = req.params;
 
   try {
-    const booking = await Booking.findById(bookingId);
+    const booking = await Booking.findById(bookingId).populate("packageId").populate("userId");
     if (!booking) {
       return res.status(404).json({ message: "Booking not found." });
     }
@@ -145,7 +162,16 @@ router.post("/confirmBooking/:bookingId", async (req, res) => {
     booking.status = "confirmed";
     await booking.save();
 
-    res.status(200).json({ booking, message: "Booking confirmed successfully!" });
+    // Send confirmation email
+    try {
+      await EmailService.sendBookingStatusNotification(booking, "confirmed");
+      console.log(`Confirmation email sent to ${booking.guestEmail}`);
+    } catch (emailError) {
+      console.error('Failed to send confirmation email:', emailError);
+      // Don't fail the request if email fails
+    }
+
+    res.status(200).json({ booking, message: "Booking confirmed successfully and notification sent!" });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
